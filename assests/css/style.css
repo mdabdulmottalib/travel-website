@@ -1,0 +1,299 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Manrope;
+}
+:root {
+  --primary-color: #fefa17;
+  --sec-color: ;
+  --darkColor: #000000;
+  --lightColor: #fff;
+  --grayColor: #e4e6e8;
+  --paraFont1: 14px;
+}
+
+.full-width {
+  width: 100%;
+}
+.box-container {
+  width: 1248px;
+  margin: 0 auto;
+}
+/* Header top section */
+
+.header-top-section {
+  background-color: var(--darkColor);
+}
+.header-top-content {
+  color: var(--lightColor);
+  font-size: var(paraFont1);
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  height: 46px;
+  justify-content: center;
+}
+.header-top-content-div-1,
+.header-top-content-div-2 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.header-top-content-div-2 > p > a {
+  color: #f09814;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+/* Header section */
+.header-logo-section {
+  font-size: 15px;
+  font-weight: 900;
+}
+.header-section {
+  padding: 20px 50px;
+  background: var(--lightColor);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.header-content,
+.nav-item,
+.header-icon-section {
+  display: flex;
+  align-items: center;
+}
+.nav-item li {
+  color: var(--darkColor);
+}
+.nav-item,
+.header-icon-section {
+  gap: 15px;
+}
+.fa-solid {
+  margin-left: 5px;
+  font-size: var(--paraFont1);
+}
+li a {
+  font-size: var(--paraFont1);
+}
+li {
+  font-size: var(--paraFont1);
+}
+.fa-chevron-down {
+  margin-right: 5px;
+}
+.fa-globe {
+  margin-left: 0;
+  margin-right: 5px;
+}
+.nav-list-item {
+  font-size: var(--paraFont1);
+  font-weight: 600;
+}
+.header-content {
+  justify-content: space-between;
+}
+
+.language-nav,
+.currency-list {
+  position: relative;
+}
+.currency-dropdown,
+.lang-dropdown {
+  background: var(--lightColor);
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgb(0, 0, 0, 0.2);
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  position: absolute;
+  top: 45px;
+  left: -20px;
+}
+
+.currency-dropdown li,
+.lang-dropdown li {
+  padding: 15px 30px;
+}
+.currency-dropdown li:hover,
+.lang-dropdown li:hover {
+  background: red;
+  color: var(--lightColor);
+}
+.currency-dropdown,
+.lang-dropdown {
+  display: none;
+}
+.curreny-current-item:hover > .currency-dropdown {
+  display: block;
+}
+
+.language:hover > .lang-dropdown {
+  display: block;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+
+.colorMode {
+  background: #f2f4f6;
+  padding: 5px;
+  width: 62px;
+  height: 48.22px;
+  border-radius: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.header-signin-btn {
+  width: 87.38px;
+  height: 50px;
+  border: 2px solid #e4e6e8;
+  border-radius: 38px;
+  background: var(--lightColor);
+  cursor: pointer;
+}
+
+.grip {
+  background: #fefa17;
+  height: 42px;
+  width: 42px;
+  border-radius: 4px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0 !important;
+}
+.fa-grip {
+  font-size: 20px;
+}
+
+/* Hero section */
+.hero-section {
+  height: 769px;
+  background: url(https://www.seasidebeachvacations.com/wp-content/uploads/2024/08/seasidebeachvacation-flyview.jpg);
+}
+
+.hero-left-content {
+  width: 100%;
+  max-width: 986px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.hero-content {
+  display: flex;
+  padding-top: 60px;
+}
+.hero-content-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hero-content-right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.hero-slider-image {
+  width: 247px;
+  height: 162.11px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 3px solid var(--lightColor);
+}
+.hero-slider-active {
+  border: 3px solid var(--primary-color);
+}
+.hero-top-button {
+  background: var(--primary-color);
+  color: var(--darkColor);
+  width: 200px;
+  height: 52px;
+  font-size: 16px;
+  font-weight: 800;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.hero-heading {
+  font-size: 64px;
+  font-weight: 900;
+  width: 90%;
+  line-height: 1.18;
+}
+.hero-paragraph {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+.hero-left-arrow {
+  display: flex;
+  gap: 10px;
+}
+.fa-arrow {
+  height: 40px;
+  width: 40px;
+  background: var(--grayColor);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fa-arrow li {
+  margin-left: 0 !important;
+}
+
+/* booking form */
+.booking-content {
+  border: 1px solid var(--grayColor);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  padding: 29px;
+  border-radius: 16px;
+}
+.booking-form-top,
+.booking-tab-list,
+.booking-form form {
+  display: flex;
+  align-items: center;
+}
+.booking-tab-list li {
+  font-size: var(--paraFont1);
+}
+.booking-tab-active {
+  background: var(--darkColor);
+  padding: 10px 20px;
+  color: white;
+  border-radius: 40px;
+}
+.booking-form-top {
+  justify-content: space-between;
+}
+.booking-tab-list {
+  gap: 15px;
+}
+.booking-form {
+  border-radius: 16px;
+  border: 1px solid var(--grayColor);
+  padding: 28px;
+}
+.booking-dropdown {
+  display: flex;
+  gap: 5px;
+}
